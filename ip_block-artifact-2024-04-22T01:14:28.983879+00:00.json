@@ -1,0 +1,246 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 2,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "block IP address",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 2,
+            "__unreachable": 0,
+            "name": "block IP address",
+            "pattern": "checkpoint",
+            "play": "block IP address",
+            "play_pattern": "checkpoint",
+            "play_uuid": "0800276c-7d54-877e-b0a1-000000000003",
+            "playbook": "/home/tendencia/HOA13/ip_block.yml",
+            "playbook_uuid": "487f8f87-54df-4089-ac7b-b69a0352c1d4",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "192.168.56.106",
+                    "__number": 0,
+                    "__result": "Failed",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.075751,
+                    "end": "2024-04-22T01:14:28.685210",
+                    "event_loop": null,
+                    "host": "192.168.56.106",
+                    "ignore_errors": null,
+                    "play": "block IP address",
+                    "play_pattern": "checkpoint",
+                    "play_uuid": "0800276c-7d54-877e-b0a1-000000000003",
+                    "playbook": "/home/tendencia/HOA13/ip_block.yml",
+                    "playbook_uuid": "487f8f87-54df-4089-ac7b-b69a0352c1d4",
+                    "remote_addr": "192.168.56.106",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "exception": "Traceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 58, in __getattr__\n    return self.__dict__[name]\n           ~~~~~~~~~~~~~^^^^^^\nKeyError: '_nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1001, in _set_plugin_options\n    plugin = getattr(self._connection, '_%s' % plugin_type)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 66, in __getattr__\n    raise AttributeError(\nAttributeError: 'Connection' object has no attribute '_nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 58, in __getattr__\n    return self.__dict__[name]\n           ~~~~~~~~~~~~~^^^^^^\nKeyError: 'nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 158, in run\n    res = self._execute()\n          ^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 556, in _execute\n    plugin_vars = self._set_connection_options(cvars, templar)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1083, in _set_connection_options\n    varnames.extend(self._set_plugin_options(plugin_type, variables, templar, task_keys))\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1004, in _set_plugin_options\n    plugin = getattr(self._connection, plugin_type)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 66, in __getattr__\n    raise AttributeError(\nAttributeError: 'Connection' object has no attribute 'nonetype'\n",
+                        "msg": "Unexpected failure during module execution: 'Connection' object has no attribute 'nonetype'",
+                        "stdout": ""
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2024-04-22T01:14:28.609459",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/tendencia/HOA13/ip_block.yml:2",
+                    "task_uuid": "0800276c-7d54-877e-b0a1-000000000009",
+                    "uuid": "58d7af71-1a02-41a2-8d6c-60fa6d949f8a"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "192.168.56.107",
+                    "__number": 1,
+                    "__result": "Failed",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.105292,
+                    "end": "2024-04-22T01:14:28.724874",
+                    "event_loop": null,
+                    "host": "192.168.56.107",
+                    "ignore_errors": null,
+                    "play": "block IP address",
+                    "play_pattern": "checkpoint",
+                    "play_uuid": "0800276c-7d54-877e-b0a1-000000000003",
+                    "playbook": "/home/tendencia/HOA13/ip_block.yml",
+                    "playbook_uuid": "487f8f87-54df-4089-ac7b-b69a0352c1d4",
+                    "remote_addr": "192.168.56.107",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "exception": "Traceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 58, in __getattr__\n    return self.__dict__[name]\n           ~~~~~~~~~~~~~^^^^^^\nKeyError: '_nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1001, in _set_plugin_options\n    plugin = getattr(self._connection, '_%s' % plugin_type)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 66, in __getattr__\n    raise AttributeError(\nAttributeError: 'Connection' object has no attribute '_nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 58, in __getattr__\n    return self.__dict__[name]\n           ~~~~~~~~~~~~~^^^^^^\nKeyError: 'nonetype'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 158, in run\n    res = self._execute()\n          ^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 556, in _execute\n    plugin_vars = self._set_connection_options(cvars, templar)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1083, in _set_connection_options\n    varnames.extend(self._set_plugin_options(plugin_type, variables, templar, task_keys))\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible/executor/task_executor.py\", line 1004, in _set_plugin_options\n    plugin = getattr(self._connection, plugin_type)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/connection_base.py\", line 66, in __getattr__\n    raise AttributeError(\nAttributeError: 'Connection' object has no attribute 'nonetype'\n",
+                        "msg": "Unexpected failure during module execution: 'Connection' object has no attribute 'nonetype'",
+                        "stdout": ""
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2024-04-22T01:14:28.619582",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/tendencia/HOA13/ip_block.yml:2",
+                    "task_uuid": "0800276c-7d54-877e-b0a1-000000000009",
+                    "uuid": "97a0c5f3-b05b-4008-9a35-ea0ee0318146"
+                }
+            ],
+            "uuid": "0800276c-7d54-877e-b0a1-000000000003"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/tendencia/HOA13/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/tendencia/HOA13/ip_block.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/tendencia/HOA13"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/tendencia/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "auto",
+                "enabled": false,
+                "image": "ghcr.io/ansible/creator-ee:v0.22.0",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/tendencia/HOA13/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Defaults",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Previous cli command",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [block IP address] ********************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;31mAn exception occurred during task execution. To see the full traceback, use -vvv. The error was: AttributeError: 'Connection' object has no attribute 'nonetype'\u001b[0m",
+        "\u001b[0;31mfatal: [192.168.56.106]: FAILED! => {\"msg\": \"Unexpected failure during module execution: 'Connection' object has no attribute 'nonetype'\", \"stdout\": \"\"}\u001b[0m",
+        "\u001b[0;31mAn exception occurred during task execution. To see the full traceback, use -vvv. The error was: AttributeError: 'Connection' object has no attribute 'nonetype'\u001b[0m",
+        "\u001b[0;31mfatal: [192.168.56.107]: FAILED! => {\"msg\": \"Unexpected failure during module execution: 'Connection' object has no attribute 'nonetype'\", \"stdout\": \"\"}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31m192.168.56.106\u001b[0m             : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31m192.168.56.107\u001b[0m             : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
