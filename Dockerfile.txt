@@ -1,0 +1,14 @@
+# Use a base image with Python and Ansible installed
+FROM python:3.9
+
+# Install Ansible Navigator
+RUN pip install ansible-navigator
+
+# Expose port for Ansible Navigator web interface
+EXPOSE 8080
+
+# Set the working directory
+WORKDIR /roles
+
+# Command to run Ansible Navigator
+CMD ["ansible-navigator", "web", "--host", "0.0.0.0", "--port", "8080"]
